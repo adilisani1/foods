@@ -1,0 +1,348 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    min-height: 60vh;
+    z-index: 100;
+    padding: 130px 0 60px 0;
+    background: rgb(137, 115, 175);
+    background: radial-gradient(circle, rgba(137, 115, 175, 1) 0%, rgba(87, 68, 130, 1) 50%, rgba(50, 46, 56, 1) 100%);
+}
+
+.hero .hero-title {
+    font-size: 5.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--white);
+    font-family: var(--Poppins);
+}
+
+.hero .hero-title span {
+    color: var(--color-secondary);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    font-family: var(--Poppins);
+    font-weight: 300;
+    width: 50%;
+    color: var(--white);
+    margin-bottom: 30px;
+}
+
+.hero .btn-book-a-table {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 36px;
+    font-family: var(--Poppins);
+    border-radius: 50px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: #fff;
+    background: var(--btn-color);
+    box-shadow: 0 8px 28px rgba(255, 111, 9, 0.2);
+}
+
+.hero .btn-book-a-table:hover {
+    background: rgba(255, 77, 0, 0.8);
+    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
+}
+
+.hero .btn-watch-video {
+    font-size: 16px;
+    transition: 0.5s;
+    font-family: var(--Poppins);
+    margin-left: 25px;
+    color: var(--white);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.hero .btn-watch-video .play-circle {
+    color: var(--color-primary);
+    font-size: 32px;
+    transition: 0.3s;
+    line-height: 0;
+    margin-right: 8px;
+}
+
+.hero .btn-watch-video:hover {
+    color: #FE7A5F
+}
+
+.hero .btn-watch-video:hover .play-circle {
+    color: #FE7A5F
+}
+
+
+.container-tabs {
+    width: 85vw;
+    margin: 0 auto;
+}
+
+
+.container-tabs .categories {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 100px;
+    margin-top: 3%;
+    margin-bottom: 6%;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: relative;
+    background-color: #ffff;
+
+}
+
+.categories .cat {
+    position: relative;
+}
+
+.categories .cat.active::before {
+    content: "";
+    position: absolute;
+    background-color: #ff4f2c;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    width: 140px;
+    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
+    border-radius: 50%;
+    margin: 0 auto;
+    height: 140px;
+    cursor: pointer;
+}
+
+.categories .cat-icon {
+    width: 100px;
+    max-width: 100%;
+    height: 140px;
+    object-fit: contain;
+    position: relative;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 990px) {
+
+
+    .hero h2 {
+        font-size: 4rem;
+
+    }
+
+    .hero span {
+        color: var(--color-secondary);
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+
+    }
+
+    .hero-title span {
+        color: var(--btn-color);
+        font-size: 4rem;
+    }
+
+
+    /* .hero-section-wrapper .hero-text {
+        font-size: 1.2rem;
+        width: 80%;
+
+    } */
+
+    /* .hero-section-wrapper .order-now-btn {
+        padding: 1rem;
+        border: none;
+        font-size: 1.2rem;
+        width: 120px;
+    } */
+
+    .hero .btn-book-a-table {
+        font-size: 12px;
+        padding: 12px 30px;
+    }
+
+
+    .hero .btn-watch-video {
+        font-size: 14px;
+
+    }
+
+    .hero .btn-watch-video .play-circle {
+        font-size: 30px;
+
+    }
+
+
+    /* Categories tabs */
+    .container-tabs {
+        width: 95vw;
+
+    }
+
+    .container-tabs .categories {
+        margin-top: 3%;
+        margin-bottom: 12%;
+        padding: 1%;
+    }
+
+    .categories .cat.active::before {
+        width: 90px;
+        height: 90px;
+    }
+
+    .categories .cat-icon {
+        width: 100px;
+        height: 90px;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-wrapper {
+        text-align: center;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .hero-wrapper .rowClass {
+        padding-top: 25%;
+    }
+
+    .hero-section-wrapper .hero-text {
+        font-size: 1.2rem;
+        width: 80%;
+        margin: 0 auto;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+
+
+
+    .hero .hero-title {
+        font-size: 3rem;
+
+    }
+
+    .hero-title span {
+        color: var(--btn-color);
+        font-size: 3rem;
+    }
+
+    .hero span {
+        color: var(--color-secondary);
+
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+        width: 63%;
+
+    }
+
+    .banner-text h2 {
+        font-size: 3.5rem;
+
+    }
+
+    .banner-text span {
+
+        font-size: 2rem;
+
+    }
+
+    .banner-text p {
+
+        font-size: 1.2rem;
+    }
+
+    .hero .btn-book-a-table {
+        font-size: 11px;
+        padding: 12px 25px;
+    }
+
+
+    .hero .btn-watch-video {
+        font-size: 12px;
+
+    }
+
+    .hero .btn-watch-video .play-circle {
+        font-size: 25px;
+
+    }
+
+
+
+
+    .container-tabs .categories {
+        margin-top: 8%;
+        margin-bottom: 20%;
+
+        padding: 2%;
+
+
+    }
+
+
+
+    .categories .cat.active::before {
+        width: 80px;
+        height: 80px;
+    }
+
+    .categories .cat-icon {
+        width: 70px;
+        height: 80px;
+
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .banner-text h2 {
+        font-size: 3rem;
+    }
+
+    .banner-text span {
+        font-size: 2rem;
+    }
+
+    .banner-text p {
+        font-size: 1.2rem;
+    }
+
+    .container-tabs .categories {
+        margin-top: 8%;
+        margin-bottom: 30%;
+
+
+    }
+
+
+
+    .categories .cat.active::before {
+        width: 60px;
+        height: 60px;
+    }
+
+    .categories .cat-icon {
+        width: 60px;
+        height: 60px;
+
+    }
+}

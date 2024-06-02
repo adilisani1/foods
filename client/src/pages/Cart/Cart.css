@@ -1,0 +1,332 @@
+/* NEW MODAL */
+.cart-modal {
+    display: flex;
+    flex-direction: row;
+    height: calc(100% - 16px);
+    overflow: hidden;
+    position: fixed;
+    right: -400px;
+    top: 8px;
+    transition: right 0.5s;
+    z-index: 1030;
+}
+
+.cart-modal.open {
+    right: 8px;
+}
+
+/* Add this to your CSS */
+.overlay-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the opacity and color as needed */
+    z-index: 3000;
+    /* Make sure it's above other content */
+    display: none;
+    /* Initially hidden */
+}
+
+.cart-modal-wrapper {
+    margin-right: 0px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    width: 400px;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid rgb(210, 217, 238);
+    box-shadow: rgba(51, 53, 72, 0.04) 8px 12px 20px, rgba(51, 53, 72, 0.02) 4px 6px 12px, rgba(51, 53, 72, 0.04) 4px 4px 8px;
+    transition: margin-right 250ms ease 0s;
+}
+
+.cart-modal-wrapper {}
+
+.cart-modal-inner {
+    /* overflow: hidden; */
+    height: 100%;
+    /* scrollbar-gutter: stable; */
+    overscroll-behavior: contain;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 15px 20px;
+    border-radius: 12px;
+}
+
+
+.cart-modal-inner::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+.cart-modal-inner::-webkit-scrollbar-thumb {
+    background-color: #c1c1c1;
+    border-radius: 10px;
+    border: 2px solid #F5F5F5;
+}
+
+.cart-modal-inner::-webkit-scrollbar-thumb:hover {
+    background-color: #a8a8a8;
+
+}
+
+/* 
+.cart-modal-inner::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+
+} */
+
+.iCxowP {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cart-modal-top {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    padding: 14px 16px 16px;
+    flex: 1 1;
+
+}
+
+.cart-modal-top-area {
+    width: 100%;
+    display: flex;
+    padding-bottom: 25px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #cccccc86;
+}
+
+.laNPNA {
+    box-sizing: border-box;
+    margin: 0px 0px 16px;
+    min-width: 0px;
+    width: 100%;
+}
+
+.kqzAOQ {
+    display: grid;
+    grid-auto-rows: auto;
+    row-gap: 16px;
+}
+
+.close-cart-btn {
+    background-color: var(--btn-color);
+    transition: width 125ms ease-in-out 0s;
+    border-radius: 12px;
+    display: flex;
+    padding: 0px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    height: 32px;
+    width: 32px;
+    color: var(--white);
+    border: none;
+    outline: none;
+}
+
+.close-cart-btn:hover {
+    opacity: .7;
+}
+
+.close-cart-btn .inner {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    color: var(--white);
+
+
+}
+
+.close-cart-icon {
+    font-size: 1.7rem !important;
+}
+
+.card {
+    border: none;
+    margin-bottom: 4rem;
+
+}
+
+.cart-card {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #cccccc86;
+}
+
+
+
+.cart-card-body img {
+    width: 80px;
+}
+
+
+.cart-product-wrapper .cart-product-title {
+    font-size: 1.4rem;
+    font-family: var(--Poppins);
+    text-transform: uppercase;
+}
+
+.cart-product-wrapper .cart-qty-wrapper {
+    position: relative;
+
+}
+
+.cart-qty-wrapper .add-sub {
+    border: none;
+    background: none;
+    /* padding: 0 .6rem; */
+}
+
+.cart-qty-wrapper .cart-product-qty {
+    padding: 0rem .5rem;
+    /* border: 1px solid #eee; */
+}
+
+.cart-product-price {
+    font-family: var(--Poppins);
+    font-size: 1.6rem;
+}
+
+.delete-cart-item {
+    display: flex;
+    align-self: flex-end;
+}
+
+.delete-cart-icon {
+    font-size: 2rem !important;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.delete-cart-icon:hover {
+    color: var(--color-two)
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 10px 5px 10px;
+}
+
+.order-total span {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--Poppins);
+}
+
+.order-total h6 {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--Poppins);
+}
+
+/* .scrollable-modal-content {} */
+.view-cart {
+    display: inherit;
+    background-color: var(--color-two);
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    align-items: center;
+    font-family: var(--Poppins);
+    font-size: 1.7rem;
+    justify-content: center;
+}
+
+.view-cart:hover {
+    background-color: var(--btn-color);
+
+}
+
+
+
+@media (max-width: 1024px) {
+    .cart-modal-wrapper {
+        width: 350px;
+    }
+
+    .cart-modal-inner {
+        padding: 15px 10px;
+
+    }
+
+    .view-cart {
+        width: 95%;
+        margin: 0 auto;
+
+    }
+}
+
+@media (max-width: 667px) {
+    .cart-modal-wrapper {
+        width: 320px;
+    }
+
+    .cart-modal-inner {
+        padding: 12px 5px;
+
+    }
+
+    .close-cart-icon {
+        font-size: 1.5rem !important;
+    }
+
+    .cart-product-price {
+
+        font-size: 1.4rem;
+    }
+
+
+    .delete-cart-icon {
+        font-size: 1.7rem !important;
+
+    }
+
+    .cart-card-body img {
+        width: 65px;
+    }
+
+
+    .cart-product-wrapper .cart-product-title {
+        font-size: 1.3rem;
+
+    }
+
+    .cart-qty-wrapper .cart-product-qty {
+        padding: 0rem .4rem;
+        font-size: 1.4rem;
+
+    }
+
+    .order-total {
+        padding: 13px 17px 5px 17px;
+    }
+
+    .order-total span {
+        font-size: 15px;
+
+    }
+
+    .order-total h6 {
+        font-size: 15px;
+
+    }
+
+    .view-cart {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.4rem;
+    }
+}

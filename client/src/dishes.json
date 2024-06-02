@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "title": "Burger One",
+        "price": 6.99,
+        "category": "burger",
+        "image": "/images/dish/burger-5.png",
+        "qty": 1
+    },
+    {
+        "id": 2,
+        "title": "Burger Two",
+        "price": 10.99,
+        "category": "burger",
+        "image": "/images/dish/burger-3.png",
+        "qty": 1
+    },
+    {
+        "id": 3,
+        "title": "Burger Three",
+        "price": 5.99,
+        "category": "burger",
+        "image": "/images/dish/burger-4.png",
+        "qty": 1
+    },
+    {
+        "id": 4,
+        "title": "Pizza One",
+        "price": 12.95,
+        "category": "pizza",
+        "image": "/images/dish/pizza-1.png",
+        "qty": 1
+    },
+    {
+        "id": 5,
+        "title": "Pizza Two",
+        "price": 20.95,
+        "category": "pizza",
+        "image": "/images/dish/pizza-2.png",
+        "qty": 1
+    },
+    {
+        "id": 6,
+        "title": "Pizza Three",
+        "price": 15.95,
+        "category": "pizza",
+        "image": "/images/dish/pizza-1.png",
+        "qty": 1
+    },
+    {
+        "id": 7,
+        "title": "Noodle 1",
+        "price": 15.95,
+        "category": "noodle",
+        "image": "/images/dish/noodles-1.png",
+        "qty": 1
+    },
+    {
+        "id": 8,
+        "title": "Noodles 2",
+        "price": 15.95,
+        "category": "noodle",
+        "image": "/images/dish/noodles-2.png",
+        "qty": 1
+    },
+    {
+        "id": 9,
+        "title": "Desert One",
+        "price": 15.95,
+        "category": "desert",
+        "image": "/images/dish/cake-1.png",
+        "qty": 1
+    },
+    {
+        "id": 10,
+        "title": "Drink One",
+        "price": 15.95,
+        "category": "drinks",
+        "image": "/images/dish/drinks-1.png",
+        "qty": 1
+    },
+    {
+        "id": 11,
+        "title": "French Fries",
+        "price": 15.95,
+        "category": "fries",
+        "image": "/images/dish/fries-1.png",
+        "qty": 1
+    }
+]

@@ -1,0 +1,132 @@
+.about-wrapper {
+    /* padding: 170px 0; */
+    height: 60vh;
+    width: 100%;
+    /* background-color:#d7e5e5; */
+    /* background: linear-gradient(to right, #D7E5E5, #dfdede); */
+    display: flex;
+    align-items: center;
+    padding: 170px 10%;
+    background-image: url(../../../public/images/menu-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+}
+
+.about-wrapper::after {
+    position: absolute;
+    height: 60vh;
+    width: 100%;
+    content: "";
+    left: 0;
+    top: 0;
+    opacity: 0.4;
+    background-color: black;
+}
+
+.about-wrapper .about-section-title .about-title {
+    font-size: 5rem;
+    font-family: var(--Poppins);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--white);
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.about-text h3 {
+    font-family: var(--Poppins);
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.about-text p {
+    width: 60%;
+    font-family: var(--Poppins);
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.sub-heading h3 {
+    font-family: var(--Poppins);
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.sub-heading p {
+    font-family: var(--Poppins);
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.about-section-wrapper {
+    display: flex;
+    text-align: left;
+    margin: 2rem 0;
+    justify-content: center;
+    width: 100%;
+}
+
+.about-section-wrapper .about-img {
+    width: 50%;
+    max-width: 100%;
+    object-fit: cover;
+
+}
+
+.about-section-wrapper .about-section-text {
+    margin: 0 2rem;
+    width: 100%;
+
+}
+
+.about-section-wrapper .about-section-text h3 {
+    font-family: var(--Poppins);
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.about-section-wrapper .about-section-text p {
+    font-family: var(--Poppins);
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+
+}
+
+@media screen and (max-width: 990px) {
+    .about-wrapper .about-section-title .about-title {
+        font-size: 4rem;
+
+    }
+
+    .about-text p {
+        width: 100%;
+        margin-bottom: 0rem;
+    }
+
+    .about-section-wrapper {
+        display: block;
+        text-align: center;
+    }
+
+    .about-section-wrapper .about-img {
+        width: 100%;
+        margin-bottom: 2rem;
+
+    }
+
+    .about-section-wrapper .about-section-text {
+        margin: 0;
+        width: 100%;
+
+    }
+}

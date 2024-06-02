@@ -1,0 +1,171 @@
+/*CARDS*/
+/*DISH DETAILS CArd
+/* **************** */
+
+.dish-details-repeat-img {
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+.menu-tab-wp {
+    margin-bottom: 80px;
+}
+
+.menu-tab ul {
+    padding: 10px;
+    display: inline-block;
+    border-radius: 60px;
+    background: linear-gradient(145deg, #ececec, #ffffff);
+    box-shadow: 28px 28px 55px #d4d4d4, -28px -28px 55px #ffffff;
+    position: relative;
+    z-index: 2;
+}
+
+.menu-tab ul li,
+.menu-tab ul .filter-active {
+    display: inline-flex;
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: normal;
+    cursor: pointer;
+    padding: 10px 26px;
+    border-radius: 30px;
+    transition: 0.3s;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-active {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    min-height: 50px;
+    z-index: -1;
+}
+
+.menu-tab ul li img {
+    margin-right: 10px;
+    position: relative;
+    top: 1px;
+}
+
+.menu-tab ul .filter-active {
+    color: #ffffff;
+    background: linear-gradient(145deg, #e3a92b, #ffc933);
+}
+
+.menu-list-row .bydefault_show .dish-details-box-wp {
+    display: inline-block !important;
+}
+
+.dish-details-box-wp {
+    display: none;
+    margin: 170px 0 140px;
+}
+
+.dish-detail-box {
+    border-radius: 30px;
+    background: linear-gradient(145deg, #ececec, #ffffff);
+    box-shadow: 28px 28px 45px #d4d4d4, -28px -28px 45px #ffffff;
+    display: flow-root;
+    padding: 10px 30px 40px;
+    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+
+.dish-detail-box:hover {
+    transform: scale(1.03);
+}
+
+.dish-detail-img {
+    /* margin-top: -130px; */
+    /* margin-bottom: 30px; */
+}
+
+.dish-detail-img img {
+    /* box-shadow: 28px 28px 45px #d4d4d4, -28px -28px 45px #ffffff;
+    border-radius: 50%;
+    overflow: hidden; */
+    width: 350px;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 250px;
+
+}
+
+
+.dish-information {
+    margin: 170px 0 140px;
+}
+
+.dish-information .dish-sub {
+    display: flex;
+    align-items: center;
+
+}
+
+.dish-information h2 {
+    font-family: var(--poppins);
+    font-size: 3rem;
+}
+
+.dish-information .dish-dec {
+    font-size: 1.5rem;
+    font-family: var(--poppins);
+}
+
+.dish-information .dish-price {
+    font-size: 2rem;
+    font-family: var(--poppins);
+}
+
+.dish-information span {
+    font-size: 1.9rem;
+    font-family: var(--poppins);
+    margin: 0 1rem;
+}
+
+.dish-information .qty-btn {
+    font-size: 1.7rem;
+    background-color: var(--color-two);
+    color: var(--white);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.add-btn-dish {
+    font-size: 1.7rem;
+    background-color: var(--color-two);
+    color: var(--white);
+
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    margin: 2rem 0rem;
+}
+
+.add-btn-dish:hover {
+    opacity: 0.8;
+
+}

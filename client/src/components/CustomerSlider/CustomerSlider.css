@@ -1,0 +1,84 @@
+.slider-container {
+    padding: 3rem;
+    margin-bottom: 10rem;
+    width: 100%;
+    align-items: center;
+}
+
+.slider-container .slider-content {
+    padding: 7rem 4rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.slider-container .slider-wrapper .slider-card {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* .slider-container .slider-wrapper .slider-card:hover {
+    border: 2px solid #E04218;
+} */
+
+.slider-container .slider-wrapper .slider-card .content-area {
+    align-items: center;
+    display: flex;
+    padding: 1rem 1.4rem;
+    flex-direction: column;
+}
+
+.slider-container .slider-wrapper .slider-card .customer-image {
+    height: 150px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid rgb(216, 216, 216);
+    width: 150px;
+    object-fit: cover;
+    margin-top: -6rem;
+}
+
+.slider-container .slider-wrapper .slider-card .stars {
+    padding: 1.4rem 0;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #eee;
+    width: 80%;
+}
+
+.slider-container .slider-wrapper .slider-card .customer-dec {
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 1px solid #eee;
+}
+
+.slider-container .slider-wrapper .slider-card .customer-name {
+    font-size: 1.7rem;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+
+
+@media (max-width: 640px) {
+    .slider-container .slider-wrapper .slider-card .customer-image {
+        height: 120px;
+        width: 120px;
+        margin-top: -5rem;
+    }
+
+    .slider-container .slider-wrapper .slider-card .customer-dec {
+        padding: 1.2rem 0;
+        font-size: 1.3rem;
+        font-family: "Montserrat", sans-serif;
+        width: 90%;
+
+    }
+}

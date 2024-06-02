@@ -1,0 +1,147 @@
+section {
+    position: relative;
+
+}
+
+.form-bg {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(137, 115, 175);
+    background: radial-gradient(circle, rgba(137, 115, 175, 1) 0%, rgba(87, 68, 130, 1) 50%, rgba(50, 46, 56, 1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.form-bg .f-wrapper {
+    position: relative;
+}
+
+.form-bg .formCard {
+    padding: 5rem 4rem;
+    max-width: 100%;
+    width: 600px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.formCard .form-sign {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    padding: 4rem 0 10rem 0;
+}
+
+.form-sign div input {
+    height: 4.5rem;
+    font-size: 1.5rem;
+    font-family: var(--Poppins);
+
+}
+
+.form-sign div label {
+    justify-content: flex-start;
+    font-size: 1.5rem;
+    font-family: var(--Poppins);
+
+}
+
+.form-sign button {
+    font-size: 1.5rem;
+    padding: 1rem;
+    height: 50px;
+    border: none;
+    background-color: #FF7B5F;
+    color: white;
+    font-family: var(--Poppins);
+
+}
+
+.form-sign button:hover {
+    color: var(--white);
+    background-color: #d93d00;
+}
+
+.formCard h1 {
+    font-family: var(--Poppins);
+    color: var(--bg-color-two);
+    font-size: 3rem;
+
+}
+
+.member {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.member a {
+    font-size: 1.5rem;
+    color: #252525;
+    margin-right: 0.6rem;
+    font-family: var(--Poppins);
+}
+
+.member a:hover {
+
+    color: #b8b1b1;
+
+}
+
+.member .push-signin {
+    font-size: 1.7rem;
+    font-family: var(--Poppins);
+    text-decoration: none;
+    color: var(--bg-color-two);
+}
+
+@media screen and (max-width: 990px) {
+
+    /* .form-bg .formCard {
+        width: 600px;
+
+    } */
+    /* 
+    .formCard .form-sign {
+        width: 100%;
+
+    } */
+    .form-bg .formCard {
+        max-width: 100%;
+
+
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .form-bg .formCard {
+        max-width: 100%;
+
+        width: 400px;
+
+    }
+
+
+}
+
+
+@media screen and (max-width: 425px) {
+    .form-bg .formCard {
+        width: 300px;
+        max-width: 100%;
+    }
+
+
+
+}

@@ -1,0 +1,92 @@
+section {
+    position: relative;
+
+}
+
+.menu-wrapper {
+    height: 70vh;
+    width: 100%;
+    margin-bottom: 10rem;
+    /* background-color:#d7e5e5; */
+    /* background: linear-gradient(to right, #D7E5E5, #dfdede); */
+    display: flex;
+    align-items: center;
+    padding: 170px 10%;
+    background-image: url(../../../public/images/menu-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.menu-wrapper::after {
+    position: absolute;
+    height: 70vh;
+    width: 100%;
+    content: "";
+    left: 0;
+    top: 0;
+    opacity: 0.4;
+    background-color: black;
+}
+
+.menu-wrapper .rowClass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menu-section-wrapper .menu-title {
+    font-size: 5.5rem;
+    font-family: var(--Poppins);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.menu-title span {
+    color: white;
+}
+
+.menu-section-wrapper .menu-text {
+    font-size: 1.5rem;
+    font-family: var(--Poppins);
+    font-weight: 300;
+    color: var(--white);
+    width: 50%;
+    margin-bottom: 1.5rem;
+    margin: 1.5rem auto;
+}
+
+
+.menu-section-wrapper .order-now-btn {
+    /* background-color: rgb(255, 47, 0); */
+    /* background: radial-gradient(#ED213A, #ac3123); */
+    /* background: linear-gradient(to right, #FF416C, #FF4B2B); */
+    background: radial-gradient(#ff8243, #e88c29);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: white;
+    width: 130px;
+    padding: 1rem;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+    margin-right: 1rem;
+}
+
+.menu-section-wrapper .see-menu-btn {
+    background: linear-gradient(to right, #1f1e1e, #545454);
+    color: white;
+    width: 130px;
+    padding: 1rem;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+}

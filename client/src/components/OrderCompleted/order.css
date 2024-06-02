@@ -1,0 +1,32 @@
+.order-completed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--black);
+    font-family: var(--Poppins);
+}
+
+.order-completed h1 {
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+}
+
+.order-completed p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.redirect {
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    padding: 14px 20px;
+    border-radius: 5px;
+    background-color: rgb(226, 102, 0);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

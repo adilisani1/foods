@@ -1,0 +1,253 @@
+/* .footerRow {
+    justify-content: center;
+
+
+} */
+.footer-wrapper {
+
+    position: relative;
+}
+
+.footer-top {
+    display: flex;
+    background-color: #1b1717;
+    color: var(--white);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.opening-hours {
+    position: relative;
+
+    /* border-right: 1px solid #ccc; */
+}
+
+.opening-hours h3 {
+    /* text-align: left; */
+    font-family: var(--Poppins);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.opening-hours ul {
+    text-align: left;
+    list-style: none;
+    padding-left: 0rem !important;
+}
+
+.opening-hours ul li:nth-child(1) {
+    font-size: 1.5rem;
+    color: orange;
+    font-weight: 400;
+}
+
+.opening-hours ul li {
+    font-size: 1.5rem;
+    color: grey;
+    font-weight: 400;
+}
+
+.stay-in-touch {
+    text-align: center;
+    padding: 0 2rem;
+    border-right: 1px solid #cccccc5b;
+    border-left: 1px solid #cccccc5b;
+    padding: 0 6rem;
+}
+
+.stay-in-touch h3 {
+    font-size: 2.5rem;
+    font-family: var(--Poppins);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.stay-in-touch p {
+    font-size: 1.3rem;
+    font-family: var(--Poppins);
+    font-weight: 400;
+
+}
+
+.footer-links {
+    /* border-right: 1px solid #ccc; */
+    /* text-align: right; */
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.footer-links h3 {
+    /* text-align: left; */
+    font-family: var(--Poppins);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+
+}
+
+.footer-links ul {
+    /* text-align: left; */
+    list-style: none;
+    padding-left: 0rem !important;
+}
+
+.footer-links ul li {
+    font-size: 1.5rem;
+    color: grey;
+    font-weight: 400;
+}
+
+
+
+.subscribe {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    /* width: 400px;
+    margin: 0 auto; */
+    width: 100%;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.subscribe .form-control {
+    border-radius: 50px;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    color: #000000;
+    transition: all 0.4s linear;
+    padding-left: 2rem;
+    font-size: 1.4rem;
+
+}
+
+.subscribe .signup-btn {
+    position: absolute;
+    right: 0;
+    height: 45px;
+    width: 110px;
+    margin-right: 0.3rem;
+    /* margin-left: 10rem;
+    margin-right: 0rem; */
+    border-radius: 50px;
+    background-color: var(--btn-color);
+    color: var(--white);
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-family: var(--Poppins);
+    font-weight: 600;
+
+}
+
+.subscribe .signup-btn:hover {
+    background-color: var(--color-two);
+    color: var(--white);
+
+}
+
+.stay-in-touch .footer-social-icons {}
+
+.stay-in-touch .footer-social-icons .icons {
+    margin: 0 1.5rem;
+    padding: 1rem;
+    border: 1px solid #cccccc5b;
+    font-size: 5rem;
+    border-radius: 50px;
+}
+
+.stay-in-touch .footer-social-icons .icons:hover {
+    background-color: var(--white);
+    color: black;
+}
+
+/* footer bottom */
+.footer-bottom {
+    background: #f3f3f5;
+
+    width: 100%;
+    padding: 2rem 5rem 1.5rem 5rem;
+
+
+}
+
+.footer-bottom .copyright-text {
+    font-size: 1.4rem;
+    color: black;
+}
+
+.footer-bottom .payment-card-container {}
+
+.footer-bottom .payment-card-container .payment-card {
+
+    margin: 0rem 0.2rem;
+    width: 150px;
+
+}
+
+
+/* Media Query */
+@media screen and (max-width: 990px) {
+
+    .opening-hours {
+        margin-bottom: 2rem;
+    }
+
+    .stay-in-touch {
+        padding: 0 2rem;
+    }
+
+    .stay-in-touch h3 {
+        font-size: 2.2rem;
+    }
+
+    .stay-in-touch p {
+        font-size: 1.2rem;
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .stay-in-touch {
+        padding: 0;
+        border: none;
+        text-align: left;
+    }
+
+    .stay-in-touch h3 {
+        font-size: 2.2rem;
+    }
+
+    .stay-in-touch p {
+        font-size: 1.2rem;
+
+    }
+
+    .subscribe .signup-btn {
+        width: 100px;
+        font-size: 1.2rem;
+
+    }
+
+    .stay-in-touch .footer-social-icons .icons {
+
+        padding: 1.4rem;
+        margin: .2rem 1rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .footer-top .d-flex {
+        justify-content: flex-start !important;
+        margin: 1.4rem 0;
+    }
+
+
+
+}
