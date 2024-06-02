@@ -27,13 +27,11 @@ function App() {
   const hideOnRoutes = ['/checkout' && '/order-completed'];
   const showNavAndFooter = !hideOnRoutes.includes(location.pathname);
 
-
   //CartModal Toggle
   const [isCartModalOpen, setIsCartModalOpen] = useState(false);
   const toggleViewCart = () => {
     setIsCartModalOpen(true)
   }
-
 
   const fetchData = async () => {
     try {
