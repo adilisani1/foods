@@ -16,7 +16,7 @@ dishRouter.post('/dishes', async (req, res) => {
         const dish = await Dishes.create(req.body);
         res.status(201).json(dish);
     } catch (error) {
-        res.status(400).json({ message: error.message }); // Changed from 404 to 400
+        res.status(400).json({ message: error.message });
     }
 });
 
