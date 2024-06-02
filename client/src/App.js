@@ -34,7 +34,7 @@ function App() {
     setIsCartModalOpen(true)
   }
 
-  //Api
+
   const fetchData = async () => {
     try {
       const response = await axios.get('https://foods-backend.vercel.app/api/dishes');
