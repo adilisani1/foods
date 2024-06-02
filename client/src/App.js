@@ -37,7 +37,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('https://foods-backend.vercel.app/api/dishes');
+      const response = await axios.get('https://food-front-end-beta.vercel.app/api/dishes');
       setDishes(response.data);
 
     } catch (error) {
