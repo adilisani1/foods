@@ -70,7 +70,7 @@ const Signup = () => {
 
                     <div className='formCard'>
                         <h1 className='mb-3 mt-5 text-center'>Sign up</h1>
-                        <form className='form-sign' onSubmit={handleSubmit}>
+                        <form className='form-wrap' onSubmit={handleSubmit}>
                             <div className="mb-4">
                                 <label htmlFor="username" className="form-label">Username</label>
                                 <input

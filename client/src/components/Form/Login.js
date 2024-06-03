@@ -92,7 +92,6 @@ const Login = () => {
                                     onChange={handleChange}
                                 />
 
-
                             </div>
                             <button type="submit" className="">Sign In</button>
                             <div className='col-12 text-center member'>

@@ -1,7 +1,6 @@
 
 
 import React, { useState, } from 'react';
-import { Modal, ModalBody, NavLink } from 'reactstrap';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import DeleteForeverOutlinedIcon from '@mui/icons-material/DeleteForeverOutlined';
 import './Cart.css';
@@ -21,9 +20,9 @@ function Cart({ isCartModalOpen, setIsCartModalOpen }) {
   }, 0);
 
   // const qtyItems = cartItems.map((item) => item.qty)
-  const qtyItems = cartItems.reduce((totalQty, item) => {
-    return totalQty + item.qty;
-  }, 0);
+  // const qtyItems = cartItems.reduce((totalQty, item) => {
+  //   return totalQty + item.qty;
+  // }, 0);
 
   //Close cart modal
   const closeCartModal = () => {
@@ -33,29 +32,9 @@ function Cart({ isCartModalOpen, setIsCartModalOpen }) {
   // View Cart button 
   const handleViewCartClick = () => {
     navigate("/checkout");
-    // setModal(false)
+    setIsCartModalOpen(false)
+
   };
-  // const orderTotal = cartItems.reduce((total, item) => total + item.price * item.qty, 0);
-  // let shippingCost;
-  // if (orderTotal > 1000) {
-  //   shippingCost = 0
-  // } else if (orderTotal === 0) {
-  //   shippingCost = 0
-  // } else {
-  //   shippingCost = 10
-  // }
-
-  // const totalPrice = orderTotal + shippingCost;
-
-
-  // useEffect(() => {
-  //   if (isCartModalOpen) {
-  //     document.body.classList.add('overlay-backdrop');
-  //   } else {
-  //     document.body.classList.remove('overlay-backdrop');
-  //   }
-  // }, [isCartModalOpen]);
-
 
 
   return (

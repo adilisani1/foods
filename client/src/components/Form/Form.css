@@ -30,6 +30,7 @@ section {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+
 .formCard .form-sign {
     position: relative;
     width: 60%;
@@ -38,6 +39,7 @@ section {
     flex-direction: column;
     justify-content: center;
     max-width: 100%;
+
     padding: 4rem 0 10rem 0;
 }
 
@@ -136,7 +138,18 @@ section {
 }
 
 
+
 @media screen and (max-width: 425px) {
+    .form-bg .formCard {
+        width: 330px;
+        max-width: 100%;
+    }
+
+
+
+}
+
+@media screen and (max-width: 345px) {
     .form-bg .formCard {
         width: 300px;
         max-width: 100%;

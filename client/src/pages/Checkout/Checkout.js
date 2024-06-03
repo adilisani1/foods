@@ -168,12 +168,19 @@ const Checkout = () => {
             <div className='checkout-page-bg'>
                 <div className='checkout-page-bg-inner'>
                     <div className='back-btn'>
-                        <NavLink to="/">
+                        {/* <NavLink to="/">
                             <KeyboardBackspaceOutlinedIcon className='back-icon' />
-                        </NavLink>
+                        </NavLink> */}
+
                     </div>
                     <div className='place-order'>
                         <h2 className='place-order-text'>Place your<p>Order</p></h2>
+                        <nav aria-label="breadcrumb">
+                            <ol className="breadcrumb">
+                                <span className="breadcrumb-item"><NavLink to="/">Home</NavLink></span>
+                                <span className="breadcrumb-item active" aria-current="page">Checkout</span>
+                            </ol>
+                        </nav>
                     </div>
                 </div>
             </div>

@@ -8,6 +8,23 @@
 
 }
 
+.breadcrumb {
+
+    width: 100%;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+
+.breadcrumb-item {
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+
 .payment-details {
     margin-bottom: 30px;
 }
